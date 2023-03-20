@@ -1,0 +1,1249 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1630px)
+	.main
+		&--support
+			.container
+				max-width: 1230px
+			.image
+				flex-direction: column
+				width: 100%
+				max-width: 100%
+				.list
+					transform: translate(0, -20%)
+					margin-left: 10px
+					margin-right: 10px
+		&--preparation
+			.cat
+				left: 10px
+
+@media only screen and (max-width : 1550px)
+	.main
+		&--preparation
+			.cat
+				display: none
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1230px)
+	.fixed
+		padding-left: 15px
+		padding-right: 15px
+	.h1
+		font-size: 53px
+	.arrows
+		&--wrapper
+			.owl
+				&-next
+					right: -15px
+				&-prev
+					left: -15px
+	ul
+		&.list
+			gap: 15px
+	.container
+		max-width: 1170px
+		.row
+			padding-left: 15px
+			padding-right: 15px
+	.header
+		&--wrapper
+			&__top
+				max-height: initial
+				.banner
+					gap: 20px
+					padding-right: 20px
+					&--info
+						padding: 14px 0 25px
+						font-size: 14px
+						.title
+							max-width: 500px
+							font-size: 22px
+							line-height: 28px
+							br
+								display: none
+			&__bottom
+				.wrapper
+					gap: 20px 15px
+					.block
+						gap: 15px
+						&--menu
+							margin-right: 0
+						&.call
+							margin-left: auto
+							align-self: flex-end
+	.main
+		&--header
+			&__wrapper
+				.left
+					&--image
+						align-items: center
+						img
+							max-width: 100px
+					&--advantages
+						.advantages
+							.advantage
+								.title
+									font-size: 50px
+		&--categories
+			&__wrapper
+				.owl
+					&-stage
+						.category
+							min-height: fit-content
+		&--company
+			&__wrapper
+				.item
+					.text
+						padding-bottom: 20px
+						padding-top: 20px
+		&--banner, &--defense
+			&__wrapper
+				.text
+					.h2
+						font-size: 30px
+					.subtitle
+						font-size: 20px
+				.image
+					right: 15px
+	.footer
+		&--wrapper
+			&__nav
+				.list
+					gap: 5px 30px
+					&--wrapper
+						&.last
+							gap: 5px 30px
+
+@media only screen and (max-width : 1200px)
+	.arrows
+		&--wrapper
+			.owl
+				&-prev
+					left: 5px
+				&-next
+					right: 5px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	section
+		margin-bottom: 60px
+	.h2
+		font-size: 32px
+		line-height: 32px
+	.location
+		height: fit-content
+	.arrows
+		&--wrapper
+			.owl
+				&-next
+					right: 20px
+				&-prev
+					left: 10px
+				&-next, &-prev
+					height: 38px
+					bottom: 57%
+			.arrows
+				&--next, &--prev
+					width: 38px
+					height: 38px
+					svg
+						width: 8px
+						height: 13px
+	.header
+		margin-bottom: 30px
+		min-height: 215px
+		&--wrapper
+			&__top
+				.banner
+					&--image
+						max-width: 350px
+					&--info
+						font-size: 12px
+						.title
+							font-size: 20px
+							line-height: 24px
+			&__bottom
+				.wrapper
+					.burger
+						display: block
+					.block
+						&--menu
+							display: none
+							height: fit-content
+							position: absolute
+							margin: 0 auto
+							top: 100%
+							right: 15px
+							width: 100%
+							background-color: $white
+							z-index: 1
+							.menu--nav
+								padding: 20px 0
+								.list
+									justify-content: flex-end
+						&.call
+							margin-left: auto
+	.main
+		&--header
+			&__wrapper
+				gap: 15px
+				.left
+					&--image
+						.h1
+							max-width: 300px
+							font-size: 38px
+					&--advantages
+						.title.h4
+							font-size: 20px
+						.advantages
+							gap: 30px
+							.advantage
+								.title
+									font-size: 35px
+								.subtitle
+									font-size: 14px
+				.right
+					margin-top: 20px
+		&--categories
+			.row
+				padding-right: 0
+			&__wrapper
+				.owl-stage
+					.category
+						width: 300px
+						.info
+							&--text
+								.h3
+									font-size: 20px
+							.button
+								font-size: 16px
+		&--dosaaf, &--students, &--preparation, &--blog, &--news
+			.h2
+				margin-bottom: 30px
+			&__wrapper
+				.h2
+					margin-bottom: 30px
+		&--dosaaf
+			.row
+				padding-right: 0
+			&__wrapper
+				.h2
+					padding-right: 15px
+				.address
+					gap: 15px
+					overflow-x: auto
+					padding-right: 15px
+					.item
+						padding: 11px 20px 15px 17px
+						flex: 100%
+						min-width: 391px
+						max-width: initial
+						.block
+							&--wrapper
+								.info
+									display: flex
+				.map
+					padding-right: 15px
+					.image
+						margin-bottom: 30px
+					.point
+						width: 30px
+						&-1
+							left: 25.7%
+							top: 6.7%
+						&-2
+							left: 38.8%
+						&-3
+							left: 32%
+						&-4
+							left: 52%
+							top: 21.5%
+						&-5
+							left: 35.8%
+						&-8
+							left: 47.9%
+						&-9
+							left: 68.8%
+		&--company
+			&__wrapper
+				.item
+					margin-bottom: 60px
+					gap: 20px
+					.text
+						padding-left: 20px
+						flex: 1 1 calc(50% - 20px)
+						.overhead
+							font-size: 18px
+						.h2
+							line-height: 1.2
+						p
+							font-size: 14px
+					.image
+						flex: 1 1 calc(50% - 20px)
+					&:nth-child(2)
+						.text
+							padding-right: 20px
+		&--education
+			.h2
+				padding-top: 60px
+				padding-bottom: 20px
+			&:before
+				height: 325px
+			&__arrows
+				.owl
+					&-prev, &-next
+						bottom: 57%
+					&-prev
+						left: 5px
+					&-next
+						right: 5px
+			&__wrapper
+				.item
+					.image
+						margin-bottom: 45px
+			&__info
+				gap: 30px
+			.button
+				margin-top: 30px
+		&--training
+			&__wrapper
+				&.top
+					margin-bottom: 60px
+					padding-top: 30px
+					gap: 20px
+					.image
+						flex: 1 1 calc(50% - 20px)
+					.text
+						flex: 1 1 calc(50% - 20px)
+						padding-right: 20px
+						.overhead
+							font-size: 18px
+						.h2
+							line-height: 1.2
+				&.bottom
+					gap: 50px
+					.text
+						.overhead
+							font-size: 18px
+						.h2
+							line-height: 1.2
+						.button
+							margin-top: 30px
+		&--support
+			margin-bottom: 20px
+			&__wrapper
+				.image
+					.list
+						.item
+							padding: 24px 16px 20px 22px
+							height: 190px
+							img
+								width: 50px
+								height: 50px
+							.title
+								font-size: 16px
+					.text
+						.h2
+							margin-bottom: 60px
+		&--installment
+			&__wrapper
+				gap: 50px
+		&--banner
+			&__wrapper
+				.text
+					padding-left: 20px
+					.h2
+						line-height: 1.2
+				.image
+					max-width: 300px
+					right: -15px
+					.ellipse
+						&_1
+							width: 150px
+							height: 150px
+						&_2
+							width: 250px
+							height: 250px
+		&--defense
+			&__wrapper
+				.text
+					padding-left: 20px
+					.h2
+						line-height: 1.2
+				.image
+					max-width: 350px
+					right: 20px
+		&--students
+			&__wrapper
+				gap: 15px
+				margin-bottom: 30px
+		&--standarts
+			&__wrapper
+				align-items: center
+				.text
+					.list
+						.item
+							.icon
+								max-width: 50px
+							span
+								font-size: 11px
+							&:nth-child(2)
+								.icon
+									max-width: 40px
+							&:last-child
+								.icon
+									max-width: 40px
+				.image
+					height: auto
+		&--preparation
+			padding-top: 60px
+			padding-bottom: 68px
+			&__wrapper
+				gap: 20px
+		&--blog
+			&__wrapper
+				gap: 15px
+				.item
+					p
+						font-size: 14px
+		&--confidence
+			.subtitle
+				margin-bottom: 30px
+			&__wrapper
+				gap: 15px
+		&--news
+			&__wrapper
+				.item
+					&.main
+						.h3
+							font-size: 24px
+							line-height: 1.2
+						p
+							margin-bottom: 30px
+		&--privileges
+			&__wrapper
+				gap: 80px
+				.info
+					.h2
+						line-height: 1.2
+						max-width: 300px
+					.text
+						margin-bottom: 30px
+	.footer
+		&--wrapper
+			&__nav
+				.list
+					gap: 12px 35px
+					&--wrapper
+						&.last
+							gap: 12px 35px
+							flex-direction: column
+			&__info
+				max-width: 180px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.h2
+		font-size: 28px
+	.header
+		min-height: 270px
+		&--wrapper
+			&__top
+				.banner
+					&--image
+						max-width: 250px
+						width: 100%
+						.desk
+							display: none
+						.mob
+							display: block
+							transform: translate(-5px)
+							width: 100%
+							object-fit: cover
+							height: 100%
+					&--info
+						.title
+							font-size: 16px
+							line-height: 20px
+							max-width: 370px
+						.subtitle
+							span
+								display: none
+	.main
+		&--header
+			&__wrapper
+				flex-wrap: wrap
+				.left
+					flex: 1 1 calc(60% - 25px)
+					&--image
+						.h1
+							font-size: 32px
+							max-width: 260px
+							line-height: 37px
+				.right
+					flex: 1 1 calc(40% - 25px)
+		&--privileges
+			&__wrapper
+				gap: 40px
+				align-items: center
+				.info
+					.h2
+						margin-top: 0
+						line-height: 1.2
+		&--dosaaf__wrapper
+			.map
+				.point
+					&-1
+						left: 25%
+						top: 6%
+					&-2
+						left: 37.8%
+						top: 1%
+					&-3
+						left: 31.5%
+						top: 18.5%
+					&-4
+						left: 51.3%
+						top: 21%
+					&-5
+						left: 35.3%
+						top: 61.2%
+					&-8
+						left: 47%
+						top: 90%
+					&-9
+						left: 68%
+						top: 76%
+		&--education
+			.row
+				padding-right: 0
+			.h2
+				padding-right: 15px
+			&__arrows
+				.owl
+					&-next, &-prev
+						bottom: 59%
+			&::before
+				height: 280px
+			.owl-stage .owl-item.center .item .image
+				transform: scale(1.2)
+			&__wrapper
+				.item
+					width: 230px
+			&__info
+				padding-right: 15px
+				.text
+					.title
+						font-size: 14px
+					p
+						font-size: 12px
+		&--training
+			&__wrapper
+				&.top
+					padding-top: 0
+					.image
+						max-width: 300px
+						.ellipse
+							height: 300px
+		&--company
+			&__wrapper
+				.item
+					padding-top: 0
+		&--support
+			.row
+				padding-right: 0
+				padding-left: 0
+			&__wrapper
+				.image
+					&--wrapper
+						height: 347px
+						width: 100%
+						background-color: #558ac7
+					.text
+						left: 5%
+						top: 15%
+						.h2
+							margin-bottom: 30px
+					.list
+						overflow-x: auto
+						margin-right: 0
+						.item
+							min-width: 254px
+							height: 254px
+							flex: 100%
+							.title
+								font-size: 18px
+							img
+								width: 80px
+								height: 80px
+		&--blog
+			.row
+				position: relative
+			&__wrapper
+				overflow-x: auto
+				.item
+					min-width: 286px
+					p
+						font-size: 18px
+			.link
+				position: absolute
+				top: 5px
+				right: 15px
+		&--confidence
+			.row
+				padding-right: 0
+			.h2
+				padding-right: 15px
+			.subtitle
+				padding-right: 15px
+			&__wrapper
+				overflow-x: auto
+				.video
+					min-width: 221px
+		&--news
+			&__wrapper
+				grid-template-columns: 1fr
+				grid-template-rows: auto
+				gap: 47px
+		&--banner, &--defense
+			overflow: hidden
+			&__wrapper
+				gap: 0
+				flex-wrap: wrap
+				.image, .text
+					flex: 1 1 50%
+				.text
+					padding-left: 20px
+					p
+						font-weight: 300
+						font-size: 16px
+				.image
+					right: 10px
+					max-width: fit-content
+		&--defense
+			&__wrapper
+				padding: 0
+		&--standarts
+			&__wrapper
+				align-items: flex-start
+	.footer
+		margin-bottom: 35px
+		.offer
+			display: none
+		.cities
+			display: none
+		&--wrapper
+			&__nav
+				.location
+					display: block
+			&__info
+				.location
+					display: none
+				.buttons
+					.button
+						display: none
+			&__logo
+				.logo
+					.subtitle, .link
+						display: none
+			&__mobile
+				display: flex
+				flex-direction: column
+				.button
+					max-width: fit-content
+					margin-bottom: 18px
+				.subtitle
+					display: flex
+					flex-direction: column
+					color: $gray
+					margin-bottom: 15px
+				.link
+					font-size: 12px
+
+@media only screen and (max-width : 700px)
+	.header
+		&--wrapper
+			&__bottom
+				.block
+					&.call
+						max-width: 100%
+						justify-content: flex-end
+						.phone--wrapper
+							display: none
+						.button
+							display: none
+	.main
+		&--header
+			&__wrapper
+				flex-wrap: wrap
+				.left
+					flex: 100%
+					&--image
+						.h1
+							max-width: 250px
+				.right
+					flex: 100%
+					&--image
+						img
+							width: 100%
+							object-fit: cover
+		&--support
+			&__wrapper
+				.image
+					&--wrapper
+						img
+							display: none
+	.footer
+		&--wrapper
+			flex-wrap: wrap
+			position: relative
+			&__logo
+				width: fit-content
+				order: 1
+			&__nav
+				width: 100%
+				order: 3
+				.list
+					justify-content: space-between
+			&__info
+				order: 2
+	
+@media only screen and (max-width : 630px)
+	section, header
+		margin-bottom: 50px
+	.header
+		margin-bottom: 25px
+		min-height: 230px
+		&--wrapper
+			gap: 20px
+	.location
+		.icon
+			span
+				font-size: 14px
+	.search
+		width: 35px
+		height: 35px
+		&--input
+			width: 35px
+			height: 35px
+			padding: 0 20px
+	.main
+		&--header
+			&__wrapper
+				.left
+					&--image
+						margin-bottom: 13px
+					&--advantages
+						.title.h4
+							font-size: 18px
+							margin-bottom: 15px
+						.advantages
+							margin-bottom: 30px
+				.right
+					margin-top: 10px
+		&--categories
+			padding-bottom: 40px
+			&::after
+				height: 395px
+			.h2
+				max-width: 210px
+				span
+					&::after
+						height: 14px
+						bottom: 0
+			&__info
+				flex-wrap: wrap
+				padding-right: 15px
+				margin-bottom: 25px
+			&__wrapper
+				.owl-stage
+					.category
+						.info
+							padding: 18px 28px 27px
+							.button
+								font-size: 18px
+		&--banner
+			&__wrapper
+				flex-direction: column
+				padding: 20px
+				padding-bottom: 0
+				.text, .info
+					padding: 0
+					flex: 1 1 100%
+					max-width: 100%
+					width: 100%
+					.h2
+						max-width: 100%
+				.image
+					flex: 1 1 100%
+					max-width: 100%
+					width: 100%
+					img
+						width: 100%
+		&--dosaaf
+			.h2
+				margin-bottom: 25px
+			&__wrapper
+				.location
+					margin-bottom: 20px
+				.address
+					flex-direction: column
+					overflow: hidden
+					margin-bottom: 25px
+				.map
+					.image
+						margin-bottom: 25px
+					.point
+						width: 22px
+						height: 22px
+				.button
+					&.all
+						margin-left: 0
+						font-size: 16px
+		&--company
+			&__wrapper
+				.item
+					flex-direction: column
+					align-items: flex-start
+					margin-bottom: 50px
+					.text
+						padding-top: 15px
+						padding-left: 15px
+						padding-right: 15px
+					.image
+						padding-left: 23px
+					&:last-child
+						flex-direction: column-reverse
+						.text
+							padding: 15px
+							padding-bottom: 20px
+						.image
+							padding-left: 0
+							padding-right: 15px
+		&--education
+			&::before
+				height: 220px
+			.row
+				padding-right: 0
+			.h2
+				padding-top: 25px
+				padding-bottom: 25px
+			&__arrows
+				.owl
+					&-prev, &-next
+						bottom: 71%
+					&-prev
+						left: 10px
+						display: none
+					&-next
+						right: 10px
+			&__wrapper
+				padding-top: 0
+				.item
+					min-width: 280px
+					.image
+						display: flex
+						margin-bottom: 25px
+			&__info
+				flex-direction: column
+				gap: 25px
+				.text
+					.title
+						font-size: 16px
+						margin-bottom: 15px
+					p
+						font-size: 14px
+			.button
+				font-size: 16px
+				margin-left: 0
+				margin-top: 25px
+		&--privileges
+			&__wrapper
+				flex-direction: column
+				gap: 25px
+		&--training
+			&__wrapper
+				&.top
+					border-radius: 50px 10px 10px 10px
+					flex-direction: column-reverse
+					padding-top: 50px
+					position: relative
+					margin-bottom: 50px
+					.text
+						padding: 10px 10px 30px
+						flex: 100%
+					.image
+						align-self: flex-start
+						flex: 100%
+						max-width: 100%
+						padding-right: 22px
+						position: initial
+						.ellipse
+							top: 30px
+							width: 100%
+							height: 90%
+				&.bottom
+					flex-wrap: wrap
+					align-items: center
+					.text
+						flex: 100%
+						.overhead
+							font-size: 15px
+						.h2
+							margin-bottom: 15px
+						.button
+							font-size: 16px
+							max-width: 285px
+							margin-top: 15px
+					.image
+						flex: 100%
+						text-align: center
+		&--support
+			max-height: 460px
+			margin-bottom: 50px
+			&__wrapper
+				.image
+					&--wrapper
+						height: 305px
+					.list
+						transform: translateY(-40%)
+					.text
+						top: 27px
+						left: 15px
+						.h2
+							max-width: 285px
+		&--installment
+			&__wrapper
+				flex-direction: column
+				gap: 35px
+				.image
+					margin-bottom: 0
+				.text
+					.h2, p
+						margin-bottom: 15px
+					.button
+						font-size: 16px
+						max-width: 188px
+		&--banner
+			&__wrapper
+				position: relative
+				gap: 45px
+				.text
+					.h2, .subtitle
+						margin-bottom: 15px
+					.subtitle
+						font-size: 22px
+					.icons
+						margin-top: 20px
+						gap: 35px
+				.image
+					position: initial
+					.ellipse
+						&_1
+							display: none
+						&_2
+							width: 411px
+							height: 411px
+							top: 20%
+							right: -20%
+							z-index: 1
+		&--standarts
+			&__wrapper
+				flex-direction: column
+				gap: 25px
+				.image
+					order: 1
+					align-self: center
+				.text
+					order: 2
+					.h2
+						margin-bottom: 15px
+					p
+						margin-bottom: 30px
+					.list
+						flex-direction: column
+						gap: 30px
+						.item
+							max-width: 340px
+							gap: 15px
+							.icon
+								text-align: center
+								max-width: 88px
+							span
+								font-size: 16px
+							&:nth-child(2)
+								max-width: 340px
+								.icon
+									max-width: 88px
+									img
+										max-width: 75px
+							&:last-child
+								max-width: 380px
+								.icon
+									max-width: 88px
+									img
+										max-width: 80px
+		&--defense
+			.image--mobile
+				display: block
+				margin-bottom: 25px
+			&__wrapper
+				background-image: none !important
+				background-color: $white
+				color: $black
+				.image
+					display: none
+				.text
+					padding: 0
+					.h2, .subtitle
+						margin-bottom: 15px
+					.subtitle
+						color: $accent
+						font-size: 18px
+						line-height: 24px
+		&--students
+			.h2
+				margin-bottom: 25px
+			&__wrapper
+				grid-template-columns: repeat(2, 1fr)
+				grid-template-rows: auto
+				margin-bottom: 25px
+			.button
+				font-size: 16px
+				max-width: 340px
+		&--preparation
+			padding-top: 25px
+			padding-bottom: 25px
+			.h2
+				max-width: 340px
+				margin: 0 auto 25px
+			&__wrapper
+				flex-wrap: wrap
+				gap: 25px 10px
+				.item
+					flex: calc(50% - 10px)
+					max-width: 50% !important
+					&:last-child
+						display: none
+		&--blog, &--confidence
+			.row
+				padding-right: 0
+			.h2
+				margin-bottom: 25px
+				padding-right: 15px
+			.subtitle
+				display: none
+			&__wrapper
+				gap: 30px
+				padding-right: 15px
+		&--news
+			&__wrapper
+				padding: 20px 20px 25px
+				.item
+					&.main
+						.date
+							margin-bottom: 15px
+						.h3
+							margin-bottom: 10px
+							font-size: 20px
+						p
+							margin-bottom: 15px
+							font-size: 14px
+							line-height: 22px
+					.date
+						margin-top: 10px
+				.wrapper
+					gap: 20px
+			.link
+				justify-content: flex-start
+				margin-top: 15px
+	.footer
+		&--wrapper
+			margin-bottom: 35px
+			&__info
+				align-self: center
+			.buttons
+				.social
+					align-items: center
+					a
+						height: 18px
+			&__nav
+				.list
+					font-size: 14px
+			&__mobile
+				.subtitle
+					font-size: 12px
+				.button
+					font-size: 12px
+					max-width: 163px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	section
+		margin-bottom: 50px
+	.h2
+		font-size: 28px
+		line-height: 36px
+	.arrows
+		&--wrapper 
+			.owl-next, .owl-prev
+				bottom: 52%
+	.fixed
+		padding-left: 10px
+		padding-right: 10px
+	.container
+		.row
+			padding-left: 10px
+			padding-right: 10px
+	.header
+		margin-bottom: 28px
+		min-height: 200px
+		&--wrapper
+			gap: 25px
+			&__top
+				.banner
+					padding-right: 11px
+					max-height: 150px
+					&--image
+						max-width: 200px
+					&--info
+						padding-bottom: 18px
+						.title
+							font-size: 14px
+							line-height: 16px
+							max-width: 160px
+						.subtitle
+							font-size: 12px
+			&__bottom
+				.burger
+					margin-left: 0
+				.block
+					gap: 25px
+					.phone--wrapper
+						display: none
+					.button
+						display: none
+	.main
+		&--header
+			&__wrapper
+				.left
+					&--image
+						margin-bottom: 13px
+					&--advantages
+						.title.h4
+							font-size: 18px
+							margin-bottom: 15px
+						.advantages
+							margin-bottom: 30px
+		&--categories
+			.h2
+				max-width: 200px
+				span
+					&::after
+						bottom: -1px
+		&--dosaaf
+			&__wrapper
+				.h2, .map, .address
+					padding-right: 0
+				.map
+					.image
+						.desktop
+							display: none
+						.mobile
+							display: block
+							width: 100%
+					.point
+						display: none
+				.address
+					.item
+						min-width: fit-content
+						width: 100%
+		&--education
+			.row
+				padding-right: 0
+			.h2
+				padding-right: 10px
+			&__info
+				padding-right: 10px
+			&__arrows
+				.owl
+					&-next, &-prev
+						bottom: 72%
+		&--training
+			&__wrapper
+				&.top
+					.image
+						.ellipse
+							height: 442px
+							width: 442px
+							left: 50%
+		&--banner
+			&__wrapper
+				.image
+					.ellipse_2
+						right: -40%
+		&--support
+			.row
+				padding-right: 0
+				padding-left: 0
+			&__wrapper 
+				.image 
+					.list
+						padding-right: 10px
+						margin-left: 0
+						padding-left: 10px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 420px)
+	.header
+		&--wrapper
+			&__top
+				.banner
+					&--info
+						.title
+							font-size: 12px
+							line-height: 14px
+							max-width: 140px
+						.subtitle
+							font-size: 11px
+
+@media only screen and (max-width : 380px)
+	.header
+		min-height: 180px
+		&--wrapper
+			&__top
+				.banner
+					&--image
+						max-width: 165px
+						.mob
+							object-fit: initial
+							width: fit-content
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
