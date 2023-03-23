@@ -149,10 +149,6 @@ $(function() {
 		}
 	});
 
-	$('.play').on('click', function() {
-		$(this).siblings('[data-fancybox]').trigger('click');
-	});
-
 	let menuBtn = $('.burger');
 	if ($(window).width() <= 992 && $(window).width() > 700) {
 		let menu = $('.block--menu');
@@ -167,7 +163,6 @@ $(function() {
 			$('html').toggleClass("overlay");
 		});
 	}
-
 
 	let header = $(".header--wrapper__bottom");
 	let offset = header.offset().top;
