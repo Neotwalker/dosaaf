@@ -33,6 +33,7 @@ if( window.innerWidth >= 992 ){
 		});
 		myMap_chel.geoObjects.add(myPlacemark1);
 		myPlacemark1.balloon.open();
+		myMap_chel.behaviors.disable('scrollZoom');
 	});
 } else {
 	ymaps.ready(function () {
@@ -70,5 +71,6 @@ if( window.innerWidth >= 992 ){
 
 	myMap_chel.geoObjects.add(myPlacemark);
 	myPlacemark.balloon.open();
+	myMap_chel.behaviors.disable('drag');
 	});
 } 
