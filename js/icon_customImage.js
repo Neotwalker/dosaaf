@@ -45,6 +45,8 @@ if( window.innerWidth >= 992 ){
 			controls: ['searchControl', 'routeButtonControl']
 		}, {
 			searchControlProvider: 'yandex#search'
+		}, {
+			suppressMapOpenBlock: true
 		}),
 	
 		MyIconContentLayout1 = ymaps.templateLayoutFactory.createClass(
