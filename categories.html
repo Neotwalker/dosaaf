@@ -205,7 +205,7 @@
 				<div class="row">
 					<h2 class="h2">Категории</h2>
 					<div class="categories--block__grid">
-						<div class="categories--block__item item--1">
+						<div class="categories--block__item">
 							<div class="categories--block__item--image">
 								<img src="img/category_1.png" alt="#">
 							</div>
@@ -218,7 +218,7 @@
 								<a href="#modal--A" class="button modal--A">Записаться</a>
 							</div>
 						</div>
-						<div class="categories--block__item item--2">
+						<div class="categories--block__item">
 							<div class="categories--block__item--image">
 								<img class="desktop" src="img/categories/categories-2.png" alt="#">
 								<img class="mobile" src="img/category_2.png" alt="#">
@@ -267,8 +267,21 @@
 								<p>Транспортные средства с&nbsp;прицепом</p>
 							</div>
 							<div class="categories--block__item--buttons">
-								<a href="#" class="button button--white">Подробнее</a>
+								<a href="categories-a.html" class="button button--white">Подробнее</a>
 								<a href="#modal--E" class="button modal--E">Записаться</a>
+							</div>
+						</div>
+						<div class="categories--block__item categories--block__item--full">
+							<div class="categories--block__item--image">
+								<img src="img/categories/categories-8.png" alt="#">
+							</div>
+							<div class="categories--block__item--info">
+								<h3 class="h3">Спецтехника, самоходные машины и внедорожники</h3>
+								<p>Тракторы, погрузчики, самоходные дорожно-строительные машины и внедорожная техника</p>
+							</div>
+							<div class="categories--block__item--buttons">
+								<a href="categories-spec.html" class="button button--white">Подробнее</a>
+								<a href="#modal--spec" class="button modal--spec">Записаться</a>
 							</div>
 						</div>
 					</div>
@@ -737,6 +750,46 @@
 						</svg>
 					</div>
 					<div class="category--text">Категория «E»</div>
+				</div>
+				<form action="#">
+					<input type="text" name="text-6" placeholder="Ваше имя">
+					<div class="input">
+						<div class="selected">
+							<div class="selected--country">
+								<img class="selected--country__flag" src="img/chelyabinsk/russia.png" alt="Russia Flag">
+							</div>
+						</div>
+						<input type="text" id="phone-6" name="phone-6" placeholder="+7 (999) 999-99-99" required="">
+					</div>
+					<button class="button">Записаться</button>
+					<span class="politic">Нажимая на кнопку Вы соглашаетесь с <a href="#">Политикой конфиденциальности</a></span>
+				</form>
+			</div>
+			<div class="modal--wrapper__right">
+				<img src="img/modal.png" alt="#">
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal--spec">
+		<div class="modal--wrapper inner--form__wrapper--info">
+			<div class="modal--close">
+				<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0.416967 2.43025C-0.138987 1.8743 -0.138987 0.972918 0.416966 0.416965C0.97292 -0.138988 1.8743 -0.138988 2.43025 0.416965L25.583 23.5697C26.139 24.1257 26.139 25.0271 25.583 25.583C25.0271 26.139 24.1257 26.139 23.5697 25.583L0.416967 2.43025Z" fill="white"/>
+					<path d="M23.5697 0.416966C24.1257 -0.138988 25.0271 -0.138988 25.583 0.416965C26.139 0.972919 26.139 1.8743 25.583 2.43025L2.43025 25.583C1.8743 26.139 0.972918 26.139 0.416965 25.583C-0.138988 25.0271 -0.138988 24.1257 0.416965 23.5697L23.5697 0.416966Z" fill="white"/>
+				</svg>
+			</div>
+			<div class="modal--wrapper__left">
+				<h2 class="h2">Запишитесь в&nbsp;автошколу в&nbsp;один клик</h2>
+				<span class="subtitle">Менеджер перезвонит, чтобы уточнить категорию, формат обучения и&nbsp;филиал</span>
+				<div class="modal--wrapper__left--category">
+					<div class="modal--wrapper__left--icon">
+						<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect y="2" width="23" height="22" rx="11" fill="white"/>
+							<path d="M10.7107 21C10.5811 20.7925 10.4445 20.5884 10.3225 20.376C9.64702 19.2 8.97482 18.0216 8.30214 16.8437C7.61722 15.6447 6.93936 14.4413 6.2469 13.2472C5.2473 11.5226 4.24017 9.80191 3.22786 8.08417C2.92967 7.57766 2.93391 7.06968 3.18358 6.5617C3.57409 5.76841 4.22227 5.3172 5.04804 5.13319C5.46964 5.03923 5.887 5.06663 6.2827 5.26385C6.53095 5.38767 6.72455 5.57314 6.85457 5.82811C7.38498 6.86903 7.91493 7.90946 8.44629 8.94989C8.61398 9.27778 8.79864 9.59686 8.95268 9.93111C9.2014 10.4719 9.43222 11.0219 9.66775 11.5691C9.75772 11.7776 9.84063 11.9895 9.93343 12.216C9.95698 12.1793 9.97535 12.1534 9.99137 12.126C10.4214 11.3963 10.8525 10.6671 11.2816 9.93698C12.2256 8.33082 13.294 6.82156 14.5296 5.44346C15.4128 4.45833 16.3705 3.56031 17.4163 2.7631C18.4615 1.96589 19.5855 1.31648 20.7872 0.810946C21.4401 0.536401 22.1132 0.328902 22.8019 0.180619C23.288 0.0758907 23.7803 -0.00192141 24.2796 3.61265e-05C24.4492 0.000525511 24.6193 0.021569 24.7888 0.0386975C24.8393 0.0440807 24.8906 0.0626773 24.9372 0.085189C25.0084 0.119935 25.0201 0.178661 24.9669 0.239834C24.9278 0.284858 24.884 0.331349 24.8327 0.358755C24.5788 0.495782 24.3258 0.634767 24.0658 0.758582C23.142 1.19805 22.2333 1.66639 21.3755 2.23554C20.4023 2.88104 19.4998 3.61805 18.6707 4.45245C17.4916 5.63921 16.4793 6.96642 15.5843 8.39249C14.6747 9.84204 13.9172 11.3758 13.2535 12.9619C12.8517 13.9225 12.463 14.8886 12.1601 15.8884C11.9284 16.6548 11.7159 17.4275 11.5016 18.1993C11.25 19.1031 11.0056 20.0095 10.7583 20.9144C10.7512 20.9398 10.7432 20.9648 10.7356 20.9902L10.7107 21Z" fill="#F76969"/>
+						</svg>
+					</div>
+					<div class="category--text">Спецтехника</div>
 				</div>
 				<form action="#">
 					<input type="text" name="text-6" placeholder="Ваше имя">
