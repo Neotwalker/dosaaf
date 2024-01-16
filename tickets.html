@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pdd-test.min" src="https://autoschool.dosaaf.ru/pdd-test/pdd-test.min.js"></script>
+	<link rel="stylesheet" type="text/css" id="pdd-test-theme" href="https://autoschool.dosaaf.ru/pdd-test/themes/gray/style.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="header--wrapper">
+					<div class="header--wrapper__top">
+						<div class="banner">
+							<div class="banner--image">
+								<img src="img/banner_header.png" alt="#" class="desk">
+								<img src="img/banner_header_mob.png" alt="#" class="mob">
+							</div>
+							<div class="banner--info">
+								<span class="title h4">Рассрочка на обучение вождению автомобиля<br> в Москве: от 6000 руб.</span>
+								<span class="subtitle">Подробнее <span>о рассрочке и скидка можно узнать</span> по телефону: <a href="tel:+74953762131" class="phone">+7 (495) 376-21-31</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="header--wrapper__bottom">
+						<div class="wrapper">
+							<div class="block">
+								<a href="#" class="logo"><img src="img/logo.svg" alt="#"></a>
+								<div class="location">
+									<div class="icon">
+										<img src="img/location.svg" alt="#">
+										<span>Москва</span>
+										<div class="icon--cities">
+											<div class="icon--cities__wrapper">
+												<span class="icon--cities__title">Другие города</span>
+												<a href="#" class="choice">
+													<svg viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg" id="icon_star">
+														<path d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"></path>
+													</svg>
+													Москва
+												</a>
+												<a href="#" class="choice">Абакан</a>
+												<a href="#" class="choice">Азов</a>
+												<a href="#" class="choice">Армавир</a>
+												<a href="#" class="choice">Архангельск</a>
+												<a href="#" class="choice">Астрахань</a>
+												<a href="#" class="choice">Барнаул</a>
+												<a href="#" class="choice">Березники</a>
+												<a href="#" class="choice">Берёзовский</a>
+												<a href="#" class="choice">Брянск</a>
+												<a href="#" class="choice">Великий Новгород</a>
+											</div>
+										</div>
+									</div>
+									<div class="location--current">
+										<span class="location--current__question">Ваш город Москва?</span>
+										<div class="location--current__buttons">
+											<a href="#" class="button yes">Да, верно</a>
+											<a href="#location--modal" class="button button--white no">Нет, другой</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block block--menu">
+								<nav class="menu--nav">
+									<ul class="list">
+										<li><a href="#">Услуги</a></li>
+										<li><a href="statesupport.html">Господдержка</a></li>
+										<li><a href="blog.html">Блог</a></li>
+										<li><a href="#">О ДОСААФ</a></li>
+										<li><a href="#">Адреса автошкол</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="block call">
+								<form class="search">
+									<input class="search--input" type="text" placeholder="Введите слово для поиска">
+									<button class="search--button" type="submit"></button>
+								</form>
+								<div class="phone--wrapper">
+									<a href="tel:+74991234567" class="phone">8 (499) 123-45-67</a>
+									<span class="sublink">Федеральный call-центр</span>
+								</div>
+								<a href="#modal--general" class="button modal--oneclick">Записаться</a>
+								<div class="burger">
+									<span class="top"></span>
+									<span class="center"></span>
+									<span class="bottom"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu menu--mobile">
+			<div class="menu--mobile__header">
+				<div class="logo">
+					<div class="icon">
+						<img src="img/main_logo.svg" alt="#">
+					</div>
+					<img src="img/logo.svg" alt="#">
+				</div>
+				<div class="location">
+					<div class="icon">
+						<img src="img/location.svg" alt="#">
+						<span>Москва</span>
+						<div class="icon--cities">
+							<div class="icon--cities__wrapper">
+								<span class="icon--cities__title">Другие города</span>
+								<a href="#" class="choice">
+									<svg viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg" id="icon_star">
+										<path d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"></path>
+									</svg>
+									Москва
+								</a>
+								<a href="#" class="choice">Абакан</a>
+								<a href="#" class="choice">Азов</a>
+								<a href="#" class="choice">Армавир</a>
+								<a href="#" class="choice">Архангельск</a>
+								<a href="#" class="choice">Астрахань</a>
+								<a href="#" class="choice">Барнаул</a>
+								<a href="#" class="choice">Березники</a>
+								<a href="#" class="choice">Берёзовский</a>
+								<a href="#" class="choice">Брянск</a>
+								<a href="#" class="choice">Великий Новгород</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="burger close">
+					<span class="top"></span>
+					<span class="bottom"></span>
+				</div>
+			</div>
+			<form class="search">
+				<input class="search--input" type="text" placeholder="Введите слово для поиска">
+				<button class="search--button" type="submit"></button>
+			</form>
+			<nav class="menu">
+				<ul class="list">
+					<li><a href="#">Услуги</a></li>
+					<li><a href="statesupport.html">Господдержка</a></li>
+					<li><a href="#">О ДОСААФ</a></li>
+					<li><a href="#">Филиалы</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="#">Права категории А</a></li>
+					<li><a href="#">Права категории В</a></li>
+					<li><a href="#">Права категории С</a></li>
+					<li><a href="#">Права категории D</a></li>
+				</ul>
+			</nav>
+			<a href="#modal--general" class="button modal--oneclick">Записаться на обучение</a>
+			<div class="block call">
+				<div class="phone--wrapper">
+					<a href="tel:+74991234567" class="phone">8 (499) 123-45-67</a>
+					<span class="sublink">Федеральный call-центр</span>
+				</div>
+				<div class="social">
+					<a href="#" class="vk"><img src="img/vk.svg" alt="#"></a>
+					<a href="#" class="tg"><img src="img/telegram.svg" alt="#"></a>
+					<a href="#" class="youtube"><img src="img/footer_youtube.svg" alt="#"></a>
+					<a href="#" class="dzen"><img src="img/footer_dzen.svg" alt="#"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<main class="main tickets">
+		<section class="tickets--header">
+			<div class="container">
+				<div class="row">
+					<div class="tickets--header__wrapper">
+						<div class="tickets--header__text">
+							<div class="overhead">Учи правила вместе с ДОСААФ</div>
+							<div class="h1">Билеты ПДД 2024</div>
+							<div class="subtitle">Экзаменационные билеты ПДД с&nbsp;последними правками от&nbsp;1&nbsp;сентября 2023 года идентичны экзамену ГИБДД</div>
+							<a href="#" class="button">Учить</a>
+						</div>
+						<div class="tickets--header__image">
+							<img src="img/tickets/header.png" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="tickets--info">
+			<div class="container">
+				<div class="row">
+					<div class="tickets--info__wrapper">
+						<div class="tickets--info__item" style="background-image: url(img/tickets/1.png);">
+							<span>Билеты актуальны на январь 2024 года</span>
+						</div>
+						<div class="tickets--info__item" style="background-image: url(img/tickets/2.png);">
+							<span>Отвечать можно с помощью клавиш 1, 2, 3, 4, enter.</span>
+						</div>
+						<div class="tickets--info__item" style="background-image: url(img/tickets/3.png);">
+							<span>Учите билеты по темам перед тем как перейти к экзамену</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="tickets--test">
+			<div class="container">
+				<div class="row">
+					<div class="h2 accent--color">Онлайн экзамен по билетам ПДД</div>
+					<div id="pdd-test">
+						<ul id="pdd-tabs">
+							<li id="pdd-examine-link" class="pdd-active">Экзамен</li>
+							<li id="pdd-numbers-link">Билеты по номерам</li>
+							<li id="pdd-categories-link">Билеты по темам</li>
+						</ul>
+						<div id="pdd-examine" class="pdd-tpl">
+							<p>
+								На экзамен даётся 20 минут.<br>
+								Внимательно читайте каждый вопрос и все варианты ответов.<br>
+								Не торопитесь. Удачи!
+							</p>
+							<button class="pdd-sbmt">Поехали!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="categories--a__form">
+			<div class="container">
+				<div class="row">
+					<div class="categories--a__form--wrapper">
+						<div class="h2">Стань уверенным водителем с ДОСААФ</div>
+						<div class="categories--a__form--left">
+							<span class="categories--a__form--subtitle">
+								Заполните форму. Оператор перезвонит, чтобы уточнить категорию и&nbsp;филиал обучения
+							</span>
+							<form action="#" class="categories--a__form--form">
+								<label>
+									<span>Имя</span>
+									<input type="text" placeholder="Имя">
+								</label>
+								<label>
+									<span>Телефон</span>
+									<input type="tel" placeholder="+7 (___)___-__-__">
+								</label>
+								<button class="button">Записаться</button>
+							</form>
+						</div>
+						<div class="categories--a__form--right">
+							<div class="categories--a__form--image">
+								<img src="img/categories/categories-a/form.png" alt="#">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer--wrapper">
+					<div class="footer--wrapper__logo">
+						<div class="logo">
+							<a href="index.html" class="icon">
+								<img src="img/main_logo.svg" alt="#">
+								<img src="img/logo_footer.svg" alt="#">
+							</a>
+							<div class="subtitle">
+								<span>Общероссийская общественно-государственная организация «Добровольное общество содействия армии, авиации и флоту России»</span>
+								<span>ИНН 7733184810</span>
+								<span>© Все права защищены, 2023</span>
+							</div>
+						</div>
+					</div>
+					<nav class="footer--wrapper__nav">
+						<ul class="list">
+							<div class="list--wrapper">
+								<div class="location footer--location">
+									<div class="icon">
+										<img src="img/location.svg" alt="#">
+										<span>Москва</span>
+										<div class="icon--cities">
+											<div class="icon--cities__wrapper">
+												<span class="icon--cities__title">Другие города</span>
+												<a href="#" class="choice">
+													<svg viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg" id="icon_star">
+														<path d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"></path>
+													</svg>
+													Москва
+												</a>
+												<a href="#" class="choice">Абакан</a>
+												<a href="#" class="choice">Азов</a>
+												<a href="#" class="choice">Армавир</a>
+												<a href="#" class="choice">Архангельск</a>
+												<a href="#" class="choice">Астрахань</a>
+												<a href="#" class="choice">Барнаул</a>
+												<a href="#" class="choice">Березники</a>
+												<a href="#" class="choice">Берёзовский</a>
+												<a href="#" class="choice">Брянск</a>
+												<a href="#" class="choice">Великий Новгород</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<li><a href="#">О ДОСААФ</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Филиалы</a></li>
+								<li><a href="blog.html">Блог</a></li>
+							</div>
+							<div class="list--wrapper last">
+								<div class="block">
+									<li><a href="#">Права категории А</a></li>
+									<li><a href="#">Права категории B</a></li>
+									<li><a href="#">Права категории C</a></li>
+								</div>
+								<div class="block">
+									<li><a href="#">Права категории D</a></li>
+									<li><a href="#">Права категории E</a></li>
+								</div>
+							</div>
+						</ul>
+					</nav>
+					<div class="footer--wrapper__info">
+						<div class="location">
+							<div class="icon">
+								<img src="img/location.svg" alt="#">
+								<span>Москва</span>
+								<div class="icon--cities">
+									<div class="icon--cities__wrapper">
+										<span class="icon--cities__title">Другие города</span>
+										<a href="#" class="choice">
+											<svg viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg" id="icon_star">
+												<path d="M7 0L8.5716 4.83688H13.6574L9.5429 7.82624L11.1145 12.6631L7 9.67376L2.8855 12.6631L4.4571 7.82624L0.342604 4.83688H5.4284L7 0Z"></path>
+											</svg>
+											Москва
+										</a>
+										<a href="#" class="choice">Абакан</a>
+										<a href="#" class="choice">Азов</a>
+										<a href="#" class="choice">Армавир</a>
+										<a href="#" class="choice">Архангельск</a>
+										<a href="#" class="choice">Астрахань</a>
+										<a href="#" class="choice">Барнаул</a>
+										<a href="#" class="choice">Березники</a>
+										<a href="#" class="choice">Берёзовский</a>
+										<a href="#" class="choice">Брянск</a>
+										<a href="#" class="choice">Великий Новгород</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="buttons">
+							<a href="#modal--general" class="button modal--oneclick">Записаться на обучение</a>
+							<div class="social">
+								<a href="#" class="vk"><img src="img/footer_vk.svg" alt="#"></a>
+								<a href="#" class="tg"><img src="img/telegram.svg" alt="#"></a>
+								<a href="#" class="youtube"><img src="img/footer_youtube.svg" alt="#"></a>
+								<a href="#" class="dzen"><img src="img/footer_dzen.svg" alt="#"></a>
+							</div>
+						</div>
+						<a href="#" class="link">Политика конфиденциальности</a>
+						<a href="#" class="link">Реквизиты</a>
+					</div>
+				</div>
+				<span class="offer">Информация на сайте не является публичной офертой</span>
+				<div class="footer--wrapper__mobile">
+					<div class="buttons">
+						<div class="social">
+							<a href="#" class="vk"><img src="img/footer_vk.svg" alt="#"></a>
+							<a href="#" class="tg"><img src="img/telegram.svg" alt="#"></a>
+							<a href="#" class="youtube"><img src="img/footer_youtube.svg" alt="#"></a>
+							<a href="#" class="dzen"><img src="img/footer_dzen.svg" alt="#"></a>
+						</div>
+					</div>
+					<a href="#" class="link">Политика конфиденциальности</a>
+					<a href="#" class="link">Реквизиты</a>
+					<div class="subtitle">
+						<span>Общероссийская общественно-государственная организация «Добровольное общество содействия армии, авиации и флоту России» ИНН 7733184810</span>
+						<span>ИНН 7733184810</span>
+						<span>© Все права защищены, 2023</span>
+						<span>Информация на сайте не является публичной офертой</span>
+					</div>
+				</div>
+				<div class="footer--wrapper__mobile-wrapper">
+					<div class="footer--wrapper__mobile-count">
+						<ul class="cities">
+							<li><a href="#" class="city">Абакан</a></li>
+							<li><a href="#" class="city">Азов</a></li>
+							<li><a href="#" class="city">Армавир</a></li>
+							<li><a href="#" class="city">Архангельск</a></li>
+							<li><a href="#" class="city">Астрахань</a></li>
+							<li><a href="#" class="city">Балашиха</a></li>
+							<li><a href="#" class="city">Барнаул</a></li>
+							<li><a href="#" class="city">Березники</a></li>
+							<li><a href="#" class="city">Берёзовский</a></li>
+							<li><a href="#" class="city">Брянск</a></li>
+							<li><a href="#" class="city">Великий Новгород</a></li>
+							<li><a href="#" class="city">Владимир</a></li>
+							<li><a href="#" class="city">Волгоград</a></li>
+							<li><a href="#" class="city">Вологда</a></li>
+							<li><a href="#" class="city">Дзержинск</a></li>
+							<li><a href="#" class="city">Ейск</a></li>
+							<li><a href="#" class="city">Екатеринбург</a></li>
+							<li><a href="#" class="city">Иваново</a></li>
+							<li><a href="#" class="city">Ижевск</a></li>
+							<li><a href="#" class="city">Ишим</a></li>
+							<li><a href="#" class="city">Казань</a></li>
+							<li><a href="#" class="city">Калуга</a></li>
+							<li><a href="#" class="city">Кандалакша</a></li>
+							<li><a href="#" class="city">Кинешма</a></li>
+							<li><a href="#" class="city">Киров</a></li>
+							<li><a href="#" class="city">Кострома</a></li>
+							<li><a href="#" class="city">Краснодар</a></li>
+							<li><a href="#" class="city">Красноярск</a></li>
+							<li><a href="#" class="city">Кропоткин</a></li>
+							<li><a href="#" class="city">Куровское</a></li>
+							<li><a href="#" class="city">Курск</a></li>
+							<li><a href="#" class="city">Липецк</a></li>
+							<li><a href="#" class="city">Магнитогорск</a></li>
+							<li><a href="#" class="city">Махачкала</a></li>
+							<li><a href="#" class="city">Москва</a></li>
+							<li><a href="#" class="city">Мурманск</a></li>
+							<li><a href="#" class="city">Набережные Челны</a></li>
+							<li><a href="#" class="city">Нальчик</a></li>
+							<li><a href="#" class="city">Нефтеюганск</a></li>
+							<li><a href="#" class="city">Нижний Новгород</a></li>
+							<li><a href="#" class="city">Нижний Тагил</a></li>
+							<li><a href="#" class="city">Новомосковск</a></li>
+							<li><a href="#" class="city">Новороссийск</a></li>
+							<li><a href="#" class="city">Новосибирск</a></li>
+							<li><a href="#" class="city">Обнинск</a></li>
+							<li><a href="#" class="city">Орел</a></li>
+							<li><a href="#" class="city">Орехово-Зуево</a></li>
+							<li><a href="#" class="city">Пенза</a></li>
+							<li><a href="#" class="city">Первоуральск</a></li>
+							<li><a href="#" class="city">Пермь</a></li>
+							<li><a href="#" class="city">Петрозаводск</a></li>
+							<li><a href="#" class="city">Псков</a></li>
+							<li><a href="#" class="city">Пятигорск</a></li>
+							<li><a href="#" class="city">Ростов-на-Дону</a></li>
+							<li><a href="#" class="city">Рыбинск</a></li>
+							<li><a href="#" class="city">Рязань</a></li>
+							<li><a href="#" class="city">Санкт-Петербург</a></li>
+							<li><a href="#" class="city">Саранск</a></li>
+							<li><a href="#" class="city">Саратов</a></li>
+							<li><a href="#" class="city">Симферополь</a></li>
+							<li><a href="#" class="city">Смоленск</a></li>
+							<li><a href="#" class="city">Солнечногорск</a></li>
+							<li><a href="#" class="city">Сочи</a></li>
+							<li><a href="#" class="city">Ставрополь</a></li>
+							<li><a href="#" class="city">Сыктывкар</a></li>
+							<li><a href="#" class="city">Тамбов</a></li>
+							<li><a href="#" class="city">Тверь</a></li>
+							<li><a href="#" class="city">Тимашевск</a></li>
+							<li><a href="#" class="city">Томск</a></li>
+							<li><a href="#" class="city">Тула</a></li>
+							<li><a href="#" class="city">Тюмень</a></li>
+							<li><a href="#" class="city">Ульяновск</a></li>
+							<li><a href="#" class="city">Урус-Мартан</a></li>
+							<li><a href="#" class="city">Хасавюрт</a></li>
+							<li><a href="#" class="city">Чебоксары</a></li>
+							<li><a href="#" class="city">Челябинск</a></li>
+							<li><a href="#" class="city">Череповец</a></li>
+							<li><a href="#" class="city">Шатура</a></li>
+							<li><a href="#" class="city">Шахты</a></li>
+							<li><a href="#" class="city">Электросталь</a></li>
+							<li><a href="#" class="city">Элиста</a></li>
+							<li><a href="#" class="city city--all">Ещё 789 автошкол ДОСААФ в 557 городах</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal" id="location--modal">
+		<div class="modal--wrapper modal--wrapper__location">
+			<div class="modal--close">
+				<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0.416967 2.43025C-0.138987 1.8743 -0.138987 0.972918 0.416966 0.416965C0.97292 -0.138988 1.8743 -0.138988 2.43025 0.416965L25.583 23.5697C26.139 24.1257 26.139 25.0271 25.583 25.583C25.0271 26.139 24.1257 26.139 23.5697 25.583L0.416967 2.43025Z" fill="#035FB1"/>
+					<path d="M23.5697 0.416966C24.1257 -0.138988 25.0271 -0.138988 25.583 0.416965C26.139 0.972919 26.139 1.8743 25.583 2.43025L2.43025 25.583C1.8743 26.139 0.972918 26.139 0.416965 25.583C-0.138988 25.0271 -0.138988 24.1257 0.416965 23.5697L23.5697 0.416966Z" fill="#035FB1"/>
+				</svg>
+			</div>
+			<div class="modal--wrapper__bottom">
+				<h2 class="h2">Выбор города</h2>
+				<div class="modal--wrapper__input">
+					<input type="text" placeholder="Найти">
+					<div class="modal--wrapper__loading">
+						<img src="img/loading.gif">
+					</div>
+				</div>
+				<div class="modal--wrapper__block">
+					<div class="modal--wrapper__cities">
+						<ul class="cities">
+							<li class="h3">А</li>
+							<li><a href="#">Абакан</a></li>
+							<li><a href="#">Адыгейск</a></li>
+							<li><a href="#">Азов</a></li>
+							<li><a href="#">Александров</a></li>
+							<li><a href="#">Архангельск</a></li>
+							<li class="h3">Б</li>
+							<li><a href="#">Балашиха</a></li>
+							<li><a href="#">Барнаул</a></li>
+							<li><a href="#">Батырево</a></li>
+							<li><a href="#">Березники</a></li>
+							<li><a href="#">Берёзовский</a></li>
+							<li><a href="#">Беслан</a></li>
+							<li><a href="#">Братск</a></li>
+							<li><a href="#">Брянск</a></li>
+							<li><a href="#">Быково</a></li>
+							<li class="h3">В</li>
+							<li><a href="#">Великие Луки</a></li>
+							<li><a href="#">Великий Новгород</a></li>
+							<li><a href="#">Вилюйск</a></li>
+							<li><a href="#">Владивосток</a></li>
+							<li><a href="#">Владимир</a></li>
+							<li><a href="#">Волгоград</a></li>
+							<li><a href="#">Волжский</a></li>
+							<li><a href="#">Вологда</a></li>
+							<li><a href="#">Волоколамск</a></li>
+							<li><a href="#">Воронеж</a></li>
+							<li><a href="#">Вышний Волочек</a></li>
+							<li><a href="#">Вязники</a></li>
+							<li><a href="#">Гиагинская</a></li>
+							<li><a href="#">Городец</a></li>
+							<li><a href="#">Гороховец</a></li>
+							<li><a href="#">Гусь-Хрустальный</a></li>
+							<li><a href="#">Дальнегорск</a></li>
+							<li class="h3">Д</li>
+							<li><a href="#">Дальнегорск</a></li>
+							<li><a href="#">Дзержинск</a></li>
+							<li><a href="#">Димитровград</a></li>
+							<li><a href="#">Дмитров</a></li>
+							<li><a href="#">Долинск</a></li>
+							<li class="h3">Е</li>
+							<li><a href="#">Ейск</a></li>
+							<li><a href="#">Екатеринбург</a></li>
+							<li class="h3">Ж</li>
+							<li><a href="#">Жердевка</a></li>
+							<li><a href="#">Жигулевск</a></li>
+							<li><a href="#">Жуковский</a></li>
+							<li class="h3">З</li>
+							<li><a href="#">Зеленоград</a></li>
+							<li><a href="#">Зерноград</a></li>
+							<li class="h3">И</li>
+							<li><a href="#">Иваново</a></li>
+							<li><a href="#">Ивантеевка</a></li>
+							<li><a href="#">Ижевск</a></li>
+							<li><a href="#">Избербаш</a></li>
+							<li><a href="#">Иркутск</a></li>
+							<li><a href="#">Ишим</a></li>
+							<li class="h3">К</li>
+							<li><a href="#">Кавалерово</a></li>
+							<li><a href="#">Калининград</a></li>
+							<li><a href="#">Калуга</a></li>
+							<li><a href="#">Канаш</a></li>
+							<li><a href="#">Кандалакша</a></li>
+							<li><a href="#">Карпинск</a></li>
+							<li><a href="#">Карсун</a></li>
+							<li><a href="#">Касимов</a></li>
+							<li><a href="#">Кинешма</a></li>
+							<li><a href="#">Киржач</a></li>
+							<li><a href="#">Киров</a></li>
+							<li><a href="#">Ковров</a></li>
+							<li><a href="#">Ковылкино</a></li>
+							<li><a href="#">Коломна</a></li>
+							<li><a href="#">Копейск</a></li>
+							<li><a href="#">Кораблино</a></li>
+							<li><a href="#">Коркино</a></li>
+							<li><a href="#">Кострома</a></li>
+							<li><a href="#">Краноуфимск</a></li>
+							<li><a href="#">Красногвардейское</a></li>
+							<li><a href="#">Краснодар</a></li>
+							<li><a href="#">Красноярск</a></li>
+							<li><a href="#">Кропоткин</a></li>
+							<li><a href="#">Кстово</a></li>
+							<li><a href="#">Кузоватово</a></li>
+							<li><a href="#">Кулебаки</a></li>
+							<li class="h3">Л</li>
+							<li><a href="#">Лесозаводск</a></li>
+							<li><a href="#">Лесосибирск</a></li>
+							<li><a href="#">Липецк</a></li>
+							<li><a href="#">Лобня</a></li>
+							<li><a href="#">Ломоносов</a></li>
+							<li class="h3">М</li>
+							<li><a href="#">Майкоп</a></li>
+							<li><a href="#">Махачкала</a></li>
+							<li><a href="#">Медногорск</a></li>
+							<li><a href="#">Меленки</a></li>
+							<li><a href="#">Мичуринск</a></li>
+							<li><a href="#">Моршанск</a></li>
+							<li><a href="#">Мурманск</a></li>
+							<li><a href="#">Муром</a></li>
+							<li><a href="#">Мытищи</a></li>
+							<li class="h3">Н</li>
+							<li><a href="#">Нальчик</a></li>
+							<li><a href="#">Нерехта</a></li>
+							<li><a href="#">Нефтеюганск</a></li>
+							<li><a href="#">Нижневартовск</a></li>
+							<li><a href="#">Нижнеудинск</a></li>
+							<li><a href="#">Нижний Новгород</a></li>
+							<li><a href="#">Нижний Тагил</a></li>
+							<li><a href="#">Нижняя Тура</a></li>
+							<li><a href="#">Николаевск</a></li>
+							<li><a href="#">Новомосковск</a></li>
+							<li><a href="#">Новороссийск</a></li>
+							<li><a href="#">Новосибирск</a></li>
+							<li><a href="#">Новоспасское</a></li>
+							<li class="h3">О</li>
+							<li><a href="#">Обнинск</a></li>
+							<li><a href="#">Одинцово</a></li>
+							<li><a href="#">Орел</a></li>
+							<li><a href="#">Оренбург</a></li>
+							<li><a href="#">Орехово-Зуево</a></li>
+							<li class="h3">П</li>
+							<li><a href="#">Партизанск</a></li>
+							<li><a href="#">Пенза</a></li>
+							<li><a href="#">Первоуральск</a></li>
+							<li><a href="#">Пермь</a></li>
+							<li><a href="#">Пограничный</a></li>
+							<li><a href="#">Подольск</a></li>
+							<li><a href="#">Понежукай</a></li>
+							<li><a href="#">Псков</a></li>
+							<li><a href="#">Пушкино</a></li>
+							<li class="h3">Р</li>
+							<li><a href="#">Радужный</a></li>
+							<li><a href="#">Рассказово</a></li>
+							<li><a href="#">Республика Адыгея</a></li>
+							<li><a href="#">Родники</a></li>
+							<li><a href="#">Ростов-на-Дону</a></li>
+							<li><a href="#">Рыбинск</a></li>
+							<li><a href="#">Ряжск</a></li>
+							<li><a href="#">Рязань</a></li>
+							<li class="h3">С</li>
+							<li><a href="#">Самара</a></li>
+							<li><a href="#">Санкт-Петербург</a></li>
+							<li><a href="#">Саранск</a></li>
+							<li><a href="#">Саратов</a></li>
+							<li><a href="#">Сасово</a></li>
+							<li><a href="#">Севастополь</a></li>
+							<li><a href="#">Семёнов</a></li>
+							<li><a href="#">Сергач</a></li>
+							<li><a href="#">Сергиев Посад</a></li>
+							<li><a href="#">Серов</a></li>
+							<li><a href="#">Серпухов</a></li>
+							<li><a href="#">Сибай</a></li>
+							<li><a href="#">Смоленск</a></li>
+							<li><a href="#">Собинка</a></li>
+							<li><a href="#">Сочи</a></li>
+							<li><a href="#">Спасск-Дальний</a></li>
+							<li><a href="#">Ставрополь</a></li>
+							<li><a href="#">Суздаль</a></li>
+							<li><a href="#">Сургут</a></li>
+							<li><a href="#">Сыктывкар</a></li>
+							<li class="h3">Т</li>
+							<li><a href="#">Тавда</a></li>
+							<li><a href="#">Тамбов</a></li>
+							<li><a href="#">Таруса</a></li>
+							<li><a href="#">Тверь</a></li>
+							<li><a href="#">Томск</a></li>
+							<li><a href="#">Тула</a></li>
+							<li><a href="#">Тульский</a></li>
+							<li><a href="#">Тюмень</a></li>
+							<li class="h3">У</li>
+							<li><a href="#">Уварово</a></li>
+							<li><a href="#">Ульяновск</a></li>
+							<li><a href="#">Урень</a></li>
+							<li><a href="#">Уссурийск</a></li>
+							<li><a href="#">Усть-Донецкий</a></li>
+							<li><a href="#">Усть-Илимск</a></li>
+							<li><a href="#">Уфа</a></li>
+							<li><a href="#">Ухолово</a></li>
+							<li class="h3">Х</li>
+							<li><a href="#">Ханты-Мансийск</a></li>
+							<li class="h3">Ч</li>
+							<li><a href="#">Чапаевск</a></li>
+							<li><a href="#">Чаплыгин</a></li>
+							<li><a href="#">Чебоксары</a></li>
+							<li><a href="#">Челябинск</a></li>
+							<li><a href="#">Черемхово</a></li>
+							<li class="h3">Ш</li>
+							<li><a href="#">Шарья</a></li>
+							<li><a href="#">Шатки</a></li>
+							<li><a href="#">Шатура</a></li>
+							<li><a href="#">Шаховская</a></li>
+							<li><a href="#">Шахты</a></li>
+							<li class="h3">Ю</li>
+							<li><a href="#">Юрьев-Польский</a></li>
+							<li class="h3">Я</li>
+							<li><a href="#">Ярославль</a></li>
+							
+						</ul>
+						<!-- <div class="modal--wrapper__cities--letter">
+							<div class="h3">А</div>
+							<a href="#">Абакан</a>
+							<a href="#">Азов</a>
+							<a href="#">Армавир</a>
+							<a href="#">Архангельск</a>
+							<a href="#">Астрахань</a>
+						</div>
+						<div class="modal--wrapper__cities--letter">
+							<div class="h3">Б</div>
+							<a href="#">Березники</a>
+							<a href="#">Березники</a>
+							<a href="#">Березники</a>
+							<a href="#">Березники</a>
+							<a href="#">Березники</a>
+						</div>
+						<div class="modal--wrapper__cities--letter">
+							<div class="h3">В</div>
+							<a href="#">Владимир</a>
+							<a href="#">Владимир</a>
+							<a href="#">Владимир</a>
+							<a href="#">Владимир</a>
+							<a href="#">Владимир</a>
+						</div>
+						<div class="modal--wrapper__cities--letter">
+							<div class="h3">Г</div>
+							<a href="#">Городец</a>
+							<a href="#">Городец</a>
+							<a href="#">Городец</a>
+							<a href="#">Городец</a>
+							<a href="#">Городец</a>
+						</div>
+						<div class="modal--wrapper__cities--letter">
+							<div class="h3">Д</div>
+							<a href="#">Долинск</a>
+							<a href="#">Долинск</a>
+							<a href="#">Долинск</a>
+							<a href="#">Долинск</a>
+							<a href="#">Долинск</a>
+						</div>
+						<div class="modal--wrapper__cities--letter">
+							<div class="h3">Е</div>
+							<a href="#">Ейск</a>
+							<a href="#">Екатеринбург</a>
+							<a href="#">Екатеринбург</a>
+							<a href="#">Ейск</a>
+							<a href="#">Екатеринбург</a>
+						</div>
+						<div class="modal--wrapper__cities--letter">
+							<div class="h3">Ж</div>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+						</div>
+						<div class="modal--wrapper__cities--letter">
+							<div class="h3">Ж</div>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+						</div>
+						<div class="modal--wrapper__cities--letter">
+							<div class="h3">Ж</div>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+						</div>
+						<div class="modal--wrapper__cities--letter">
+							<div class="h3">Ж</div>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+							<a href="#">Жердевка</a>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal--general">
+		<div class="modal--wrapper inner--form__wrapper--info">
+			<div class="modal--close">
+				<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0.416967 2.43025C-0.138987 1.8743 -0.138987 0.972918 0.416966 0.416965C0.97292 -0.138988 1.8743 -0.138988 2.43025 0.416965L25.583 23.5697C26.139 24.1257 26.139 25.0271 25.583 25.583C25.0271 26.139 24.1257 26.139 23.5697 25.583L0.416967 2.43025Z" fill="white"/>
+					<path d="M23.5697 0.416966C24.1257 -0.138988 25.0271 -0.138988 25.583 0.416965C26.139 0.972919 26.139 1.8743 25.583 2.43025L2.43025 25.583C1.8743 26.139 0.972918 26.139 0.416965 25.583C-0.138988 25.0271 -0.138988 24.1257 0.416965 23.5697L23.5697 0.416966Z" fill="white"/>
+				</svg>
+			</div>
+			<div class="modal--wrapper__left">
+				<h2 class="h2">Запишитесь в&nbsp;автошколу в&nbsp;один клик</h2>
+				<span class="subtitle">Менеджер перезвонит, чтобы уточнить категорию, формат обучения и&nbsp;филиал</span>
+				<form action="#">
+					<div class="select">
+						<select>
+							<option value="Адрес школы" selected disabled>Адрес школы</option>
+							<option value="Адрес 1" >Адрес 1</option>
+							<option value="Адрес 2" >Адрес 2</option>
+							<option value="Адрес 3" >Адрес 3</option>
+						</select>
+					</div>
+					<input type="text" name="text-1" placeholder="Ваше имя">
+					<div class="input">
+						<div class="selected">
+							<div class="selected--country">
+								<img class="selected--country__flag" src="img/chelyabinsk/russia.png" alt="Russia Flag">
+							</div>
+						</div>
+						<input type="text" id="phone-1" name="phone-1" placeholder="+7 (999) 999-99-99" required="">
+					</div>
+					<button class="button">Записаться</button>
+					<span class="politic">Нажимая на кнопку Вы соглашаетесь с <a href="#">Политикой конфиденциальности</a></span>
+				</form>
+			</div>
+			<div class="modal--wrapper__right">
+				<img src="img/modal.png" alt="#">
+			</div>
+		</div>
+	</div>
+
+	<script data-src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.16/require.js?" data-main="https://autoschool.dosaaf.ru/pdd-test/pdd-test.min.js" id="pdd-test-script"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
