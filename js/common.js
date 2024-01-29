@@ -521,5 +521,18 @@ $(function() {
 		$(this).parent().find('.submenu').toggleClass('active');
 	});
 
+	if (localStorage.getItem('modalShown') !== 'true') {
+    $('.modal--spam').css('opacity', '1').css('z-index', '9999999');
+    $('.modal--spam .button').click(function(){
+      $('.modal--spam').css('opacity', '0').css('z-index', '-1');
+      localStorage.setItem('modalShown', 'true');
+    });
+  }
+
+	$('.modal--spam .modal--wrapper__left .button').click(function(){
+		$('.modal--spam').css({'opacity': '0', 'z-index': '-1'});
+		localStorage.setItem('modalShown', 'true');
+	});
+
 });
 
