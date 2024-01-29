@@ -517,7 +517,7 @@ $(function() {
 		$(this).parent().parent().find('.open--categoriesPriceInfo__hidden').slideToggle();
 	});
 
-	$('.list li').click(function(){
+	$('.list li > span').click(function(){
 		$(this).parent().find('.submenu').toggleClass('active');
 	});
 
